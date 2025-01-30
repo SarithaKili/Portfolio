@@ -12,6 +12,9 @@ import menu from "./menu.svg";
 import GBIN from './GBIN.png';
 import lab from './lab.png';
 import my1 from './my1.jpg';
+import kiosk from './kiosk.png';
+import event from './event.png';
+import helakuru from './helakuru.png';
 
 import facebook from './facebook.png';
 import github from './github.png';
@@ -45,6 +48,9 @@ export {
   GBIN,
   lab,
   gbin_home,
-  ai_llm
+  ai_llm,
+  kiosk,
+  event,
+  helakuru
   
 };

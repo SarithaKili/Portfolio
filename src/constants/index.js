@@ -8,7 +8,10 @@ import {
   thegrearindiankitchen,
   lab,
   gbin_home,
-  ai_llm
+  ai_llm,
+  kiosk,  
+  event,
+  helakuru
   
 
 } from "../assets";
@@ -109,6 +112,42 @@ const experiences = [
     ],
     image: lab,
     link:"https://github.com/SarithaKili/CO2-lab-booking-app-backend",
+  },
+  {
+    title: "Music-Event Management Dashboard",
+    company_name: "Figma",
+  
+    iconBg: "#E6DEDD",
+    date: "Present",
+    points: [
+      "Music-Event Management Dashboard, likely focusing on features such as event scheduling, ticket management, and user engagement to streamline event planning and execution"
+    ],
+    image: event,
+    link:"https://www.figma.com/proto/miOgNzhB7gVlAA3bnpqGuB/Event-management-dashboard?page-id=0%3A1&node-id=4-139&viewport=224%2C192%2C0.29&t=lhinITTJX2ZWZXLN-1&scaling=min-zoom&content-scaling=fixed",
+  },
+  {
+    title: "Helakuru-Like Mobile App",
+    company_name: "Figma",
+  
+    iconBg: "#E6DEDD",
+    date: "Present",
+    points: [
+      "identifying issues in the original Helakuru app, making improvements, and analyzing user pain points to enhance the overall user experience."
+    ],
+    image: helakuru,
+    link:"https://www.figma.com/proto/s1owoMFKQ17uKUk475eC7I/User-Login-Dashboard?page-id=0%3A1&node-id=103-132&viewport=734%2C1009%2C0.3&t=DZpRN67S2w2e6Cr1-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=46%3A119&show-proto-sidebar=1",
+  },
+  {
+    title: "Restaurant-kiosk",
+    company_name: "Figma",
+  
+    iconBg: "#E6DEDD",
+    date: "Aug 2024 - Nov 2024",
+    points: [
+      "kiosk interface for a fast-food restaurant, focusing on user-friendly navigation, efficient order placement, and a visually appealing UI to enhance the customer experience"
+    ],
+    image:  kiosk,
+    link:"https://www.figma.com/proto/I8bLaoKmFUxYpLw25vHhJ6/Restaurant-kiosk?page-id=0%3A1&node-id=4-4&viewport=-232%2C258%2C0.18&t=ScsELLHZDffJlFsD-1&scaling=min-zoom&content-scaling=fixed",
   },
 ];
 
