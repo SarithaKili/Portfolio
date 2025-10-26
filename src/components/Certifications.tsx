@@ -1,70 +1,77 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { ExternalLink } from "lucide-react";
+
+// ✅ Import all images properly
+import cert1 from "@/assets/cert_1.png";
+import cert2 from "@/assets/cert_2.jpg";
+import cert3 from "@/assets/cert_3.jpg";
+import cert4 from "@/assets/cert_4.png";
+
 const Certifications = () => {
-  const projects = [
+  const certifications = [
     {
-      title: "Cisco Certified Network Associate-Fundamental",
+      title: "Cisco Certified Network Associate - Fundamental",
       tags: ["CISCO", "Networking"],
-      image: "/src/assets/cert_1.png",
+      image: cert1,
       gradient: "from-primary/10 to-primary/5",
     },
     {
       title: "IEEEXTREME 18.0 REGION 10",
-      tags: ["Datastructure & Algorithms"],
-      image: "/src/assets/cert_2.jpg",
+      tags: ["Data Structures & Algorithms"],
+      image: cert2,
       gradient: "from-primary/10 to-primary/5",
     },
     {
       title: "Azure AI Fundamentals",
       tags: ["Azure", "AI"],
-      image: "/src/assets/cert_3.jpg",
+      image: cert3,
       gradient: "from-primary/10 to-primary/5",
     },
     {
       title: "Agile Project Management",
-      tags: ["Software development life cycle"],
-      image: "/src/assets/cert_4.png",
+      tags: ["Software Development Life Cycle"],
+      image: cert4,
       gradient: "from-primary/10 to-primary/5",
-    }
-   
+    },
   ];
 
   return (
-    <section id="projects" className="py-20 bg-gray-100">
+    <section id="certifications" className="py-20 bg-gray-100">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
+          {/* Section Header */}
           <h2 className="text-4xl font-bold text-center mb-4 text-gray-900">
-            Certifications & Achivements
+            Certifications & Achievements
           </h2>
           <p className="text-center text-gray-700 mb-12 text-lg">
-            A glimpse into my journey of continuous learning and professional development through certifications.
+            A glimpse into my journey of continuous learning and professional
+            development through certifications.
           </p>
 
+          {/* Certification Cards */}
           <div className="grid md:grid-cols-4 gap-6">
-            {projects.map((project, index) => (
+            {certifications.map((cert, index) => (
               <Card
                 key={index}
-                className={`p-6 shadow-md hover:shadow-xl transition-all hover:scale-[1.02] bg-gradient-to-br ${project.gradient} border border-gray-200`}
+                className={`p-6 shadow-md hover:shadow-xl transition-all hover:scale-[1.02] bg-gradient-to-br ${cert.gradient} border border-gray-200`}
               >
-                {/* Project Image */}
+                {/* Certification Image */}
                 <div className="overflow-hidden rounded-lg mb-4">
                   <img
-                    src={project.image}
-                    alt={project.title}
-                    className="w-full h-65 object-cover rounded-lg transition-transform duration-300 hover:scale-105"
+                    src={cert.image}
+                    alt={cert.title}
+                    className="w-full h-64 object-cover rounded-lg transition-transform duration-300 hover:scale-105"
                   />
                 </div>
 
-                {/* Project Info */}
-                <h3 className="text-1xl font-bold text-gray-900 mb-3">
-                  {project.title}
+                {/* Title */}
+                <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                  {cert.title}
                 </h3>
-               
 
                 {/* Tags */}
-                <div className="flex flex-wrap gap-2 mb-4">
-                  {project.tags.map((tag) => (
+                <div className="flex flex-wrap gap-2">
+                  {cert.tags.map((tag) => (
                     <Badge
                       key={tag}
                       variant="secondary"
@@ -74,7 +81,6 @@ const Certifications = () => {
                     </Badge>
                   ))}
                 </div>
-
               </Card>
             ))}
           </div>
