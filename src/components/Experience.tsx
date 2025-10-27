@@ -2,7 +2,7 @@ import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import {  MapPin, Calendar } from "lucide-react";
-import logo from "@/assets/arescomp.jpg";
+import logo from "/assets/arescomp.jpg";
 
 const Experience = () => {
  const toolsAndTech = [

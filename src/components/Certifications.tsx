@@ -2,10 +2,10 @@ import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
 // ✅ Import all images properly
-import cert1 from "@/assets/cert_1.png";
-import cert2 from "@/assets/cert_2.jpg";
-import cert3 from "@/assets/cert_3.jpg";
-import cert4 from "@/assets/cert_4.png";
+import cert1 from "/assets/cert_1.png";
+import cert2 from "/assets/cert_2.jpg";
+import cert3 from "/assets/cert_3.jpg";
+import cert4 from "/assets/cert_4.png";
 
 const Certifications = () => {
   const certifications = [
