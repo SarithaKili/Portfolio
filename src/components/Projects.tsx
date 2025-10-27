@@ -4,11 +4,11 @@ import { Button } from "@/components/ui/button";
 import { ExternalLink, Github } from "lucide-react";
 
 // ✅ Import images correctly
-import ewaste from "@/assets/ewaste.png";
-import lab from "@/assets/lab.png";
-import mouse from "@/assets/mouse.jpg";
-import food from "@/assets/food.png";
-import research from "@/assets/research.png";
+import ewaste from "../assets/ewaste.png";
+import lab from "../assets/lab.png";
+import mouse from "../assets/mouse.jpg";
+import food from "../assets/food.png";
+import research from "../assets/research.png";
 
 const Projects = () => {
   const projects = [
