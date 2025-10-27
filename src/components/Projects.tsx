@@ -3,13 +3,6 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Github } from "lucide-react";
 
-// ✅ Import images correctly
-import ewaste from "./assets/ewaste.png";
-import lab from "./assets/lab.png";
-import mouse from "./assets/mouse.jpg";
-import food from "./assets/food.png";
-import research from "./assets/research.png";
-
 const Projects = () => {
   const projects = [
     {
@@ -19,7 +12,7 @@ const Projects = () => {
       tags: ["HTML", "CSS", "JavaScript", "Node.js"],
       github: "https://github.com/SarithaKili/GBin-HCI-project",
       live: "http://16.170.228.38:5173/",
-      image: ewaste,
+      image: "/assets/ewaste.png", // ✅ Direct path from public folder
       gradient: "from-primary/10 to-primary/5",
     },
     {
@@ -38,7 +31,7 @@ const Projects = () => {
       ],
       github: "https://github.com/SarithaKili/labbooking",
       live: "http://13.61.9.179:5173/",
-      image: lab, // ✅ FIXED
+      image: "/assets/lab.png",
       gradient: "from-secondary/10 to-secondary/5",
     },
     {
@@ -47,7 +40,7 @@ const Projects = () => {
         "A computer vision-based system that enables controlling the mouse using hand gestures and voice commands via webcam, leveraging MediaPipe and OpenCV for real-time tracking.",
       tags: ["Python", "OpenCV", "MediaPipe", "PyAutoGUI", "SpeechRecognition"],
       github: "https://github.com/SarithaKili/Gesture-Controlled-Virtual-Mouse-",
-      image: mouse,
+      image: "/assets/mouse.jpg",
       gradient: "from-accent/10 to-accent/5",
     },
     {
@@ -57,7 +50,7 @@ const Projects = () => {
       tags: ["React", "Tailwind CSS", "Firebase", "JavaScript"],
       github: "https://github.com/SarithaKili/FullstackDev",
       live: "http://16.171.8.121:5173/",
-      image: food,
+      image: "/assets/food.png",
       gradient: "from-yellow-100 to-yellow-50",
     },
     {
@@ -66,7 +59,7 @@ const Projects = () => {
         "Research project optimizing cloud resource allocation in heterogeneous GPU clusters using deep learning models (DNN, LSTM, Bi-LSTM) integrated with dynamic schedulers for enhanced utilization.",
       tags: ["Python", "TensorFlow", "Pandas", "LSTM", "Cloud Computing"],
       github: "https://github.com/SarithaKili/research",
-      image: research,
+      image: "/assets/research.png",
       gradient: "from-indigo-100 to-indigo-50",
     },
   ];
