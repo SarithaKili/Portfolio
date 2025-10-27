@@ -60,8 +60,9 @@ const Certifications = () => {
                   <img
                     src={cert.image}
                     alt={cert.title}
-                    className="w-full h-64 object-cover rounded-lg transition-transform duration-300 hover:scale-105"
+                    className="w-full h-64 object-contain rounded-lg bg-white transition-transform duration-300 hover:scale-105"
                   />
+
                 </div>
 
                 {/* Title */}
